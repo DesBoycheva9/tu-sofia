@@ -19,7 +19,7 @@
 					<target>1.8</target>
 					<fork>true</fork>
 					<executable>C:\Program Files\Java\jdk1.8.0_91\bin\javac</executable>
-					<project.build.sourceEncoding>Cp1251</project.build.sourceEncoding>
+					<project.build.sourceEncoding>windows-1251</project.build.sourceEncoding>
 				</configuration>
 			</plugin>
 		</plugins>
@@ -30,7 +30,7 @@
       <groupId>junit</groupId>
       <artifactId>junit</artifactId>
       <version>4.12</version>
-      <scope>compile</scope>
+      <scope>test</scope>
     </dependency>
 
         <dependency>
