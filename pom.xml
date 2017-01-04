@@ -19,7 +19,7 @@
 					<target>1.8</target>
 					<fork>true</fork>					
 					        <encoding>${project.build.sourceEncoding}</encoding>
-                                                <sourceEncoding>${project.build.sourceEncoding}</sourceEncoding>>
+                                                <sourceEncoding>${project.build.sourceEncoding}</sourceEncoding>
 				</configuration>
 				</plugin>
              
