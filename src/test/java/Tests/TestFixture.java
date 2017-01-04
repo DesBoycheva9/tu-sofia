@@ -5,6 +5,9 @@ import org.junit.Before;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.remote.CapabilityType;
+import org.openqa.selenium.remote.DesiredCapabilities;
+import org.openqa.selenium.UnexpectedAlertBehaviour;
 
 import java.util.concurrent.TimeUnit;
 
@@ -21,6 +24,8 @@ public class TestFixture
 
     @Before
     public void setUp() throws Exception {
+           DesiredCapabilities dc=new DesiredCapabilities();
+        dc.setCapability(CapabilityType.UNEXPECTED_ALERT_BEHAVIOUR, UnexpectedAlertBehaviour.IGNORE);
         setDriver(new FirefoxDriver());
         setBaseUrl("http://www.tu-sofia.bg");
         getDriver().manage().window().maximize();
