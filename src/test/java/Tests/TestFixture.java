@@ -27,7 +27,7 @@ public class TestFixture
            DesiredCapabilities dc=new DesiredCapabilities();
        // dc.setCapability(CapabilityType.UNEXPECTED_ALERT_BEHAVIOUR, UnexpectedAlertBehaviour.IGNORE);
        //setDriver(new FirefoxDriver());
-        System.setProperty("webdriver.chrome.driver", "C:\\SeleniumDrivers\\chromedriver.exe");
+        System.setProperty("webdriver.chrome.driver", "C://SeleniumDrivers//chromedriver.exe");
         setDriver(new ChromeDriver());
         setBaseUrl("http://www.tu-sofia.bg");
         getDriver().manage().window().maximize();
