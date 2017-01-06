@@ -25,8 +25,10 @@ public class TestFixture
     @Before
     public void setUp() throws Exception {
            DesiredCapabilities dc=new DesiredCapabilities();
-        dc.setCapability(CapabilityType.UNEXPECTED_ALERT_BEHAVIOUR, UnexpectedAlertBehaviour.IGNORE);
-        setDriver(new FirefoxDriver());
+       // dc.setCapability(CapabilityType.UNEXPECTED_ALERT_BEHAVIOUR, UnexpectedAlertBehaviour.IGNORE);
+       //setDriver(new FirefoxDriver());
+        System.setProperty("webdriver.chrome.driver", "C:\\SeleniumDrivers\\chromedriver.exe");
+        setDriver(new ChromeDriver());
         setBaseUrl("http://www.tu-sofia.bg");
         getDriver().manage().window().maximize();
         getDriver().manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
