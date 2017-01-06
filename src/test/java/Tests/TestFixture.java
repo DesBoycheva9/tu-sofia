@@ -30,7 +30,7 @@ public class TestFixture
        // dc.setCapability(CapabilityType.UNEXPECTED_ALERT_BEHAVIOUR, UnexpectedAlertBehaviour.IGNORE);
        //setDriver(new FirefoxDriver());
         System.setProperty("webdriver.chrome.driver", "C://SeleniumDrivers//chromedriver.exe");
-        //WebDriver driver = new RemoteWebDriver("http://127.0.0.1:9515", DesiredCapabilities.chrome());
+        //WebDriver driver = new RemoteWebDriver("http://127.0.0.1:9515", DesiredCapabilities.chrome()));
         setDriver (new RemoteWebDriver("http://127.0.0.1:9515", DesiredCapabilities.chrome());
         setBaseUrl("http://www.tu-sofia.bg");
         getDriver().manage().window().maximize();
