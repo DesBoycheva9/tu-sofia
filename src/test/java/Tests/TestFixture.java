@@ -1,3 +1,4 @@
+
 package Tests;
 
 import org.junit.After;
@@ -8,6 +9,7 @@ import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.remote.CapabilityType;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.UnexpectedAlertBehaviour;
+import org.openqa.selenium.chrome.ChromeDriver;
 
 import java.util.concurrent.TimeUnit;
 
@@ -28,6 +30,7 @@ public class TestFixture
        // dc.setCapability(CapabilityType.UNEXPECTED_ALERT_BEHAVIOUR, UnexpectedAlertBehaviour.IGNORE);
        //setDriver(new FirefoxDriver());
         System.setProperty("webdriver.chrome.driver", "C://SeleniumDrivers//chromedriver.exe");
+        //WebDriver driver = new RemoteWebDriver("http://127.0.0.1:9515", DesiredCapabilities.chrome());
         setDriver(new ChromeDriver());
         setBaseUrl("http://www.tu-sofia.bg");
         getDriver().manage().window().maximize();
